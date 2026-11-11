@@ -1,0 +1,494 @@
+
+/* ===== CONFIGURAÇÕES GERAIS ===== */
+
+:root {
+    --verde: #174C4F;
+    --verde-escuro: #103638;
+    --creme: #F6EBDD;
+    --laranja: #D97742;
+    --marrom: #4A3028;
+    --texto: #3F332D;
+    --branco: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--creme);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+a {
+    overflow-wrap: anywhere;
+}
+
+/* ===== MENU ===== */
+
+header {
+    background-color: var(--verde);
+    padding: 22px 8%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu h2 {
+    color: var(--creme);
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a {
+    color: var(--creme);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #FFB17D;
+}
+
+/* ===== PÁGINA INICIAL ===== */
+
+.inicio {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 8%;
+}
+
+.inicio-texto {
+    flex: 1;
+}
+
+.inicio-texto h3 {
+    color: var(--laranja);
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.inicio-texto h1 {
+    font-size: 54px;
+    color: var(--verde);
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.inicio-texto h1 span {
+    color: var(--laranja);
+}
+
+.inicio-texto p {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+/* ===== BOTÕES ===== */
+
+.botao {
+    display: inline-block;
+    background-color: var(--laranja);
+    color: var(--branco);
+    padding: 14px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: var(--marrom);
+    transform: translateY(-4px);
+}
+
+/* ===== IMAGEM ===== */
+
+.inicio-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio-imagem img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 22px;
+    border: 5px solid white;
+    box-shadow: 0 15px 40px #4A302830;
+}
+
+/* ===== HISTÓRIA ===== */
+
+.historia {
+    background-color: var(--verde);
+    color: var(--creme);
+    padding: 80px 15%;
+    text-align: center;
+}
+
+.historia h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+}
+
+.historia p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+/* ===== CURIOSIDADES ===== */
+
+.curiosidades {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.curiosidades h2 {
+    font-size: 38px;
+    color: var(--verde);
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: var(--branco);
+    padding: 35px 25px;
+    border-radius: 18px;
+    border-bottom: 5px solid var(--laranja);
+    box-shadow: 0 8px 25px #4A302815;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    color: var(--laranja);
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: var(--texto);
+}
+
+/* ===== INTERATIVIDADE ===== */
+
+.interatividade {
+    padding: 80px 8%;
+    background-color: #E9D8C5;
+    text-align: center;
+}
+
+.interatividade h2 {
+    color: var(--verde);
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.interatividade p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.interatividade button {
+    background-color: var(--verde);
+    color: white;
+    padding: 15px 28px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.interatividade button:hover {
+    background-color: var(--laranja);
+}
+
+/* ===== CHAMADA PARA CONTATO ===== */
+
+.chamada-contato {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.chamada-contato h2 {
+    color: var(--verde);
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.chamada-contato p {
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+
+/* ===== PÁGINA DE CONTATO ===== */
+
+.pagina-contato {
+    padding: 75px 8%;
+    min-height: 80vh;
+}
+
+.titulo-contato {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo-contato h3 {
+    color: var(--laranja);
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.titulo-contato h1 {
+    color: var(--verde);
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+.titulo-contato h1 span {
+    color: var(--laranja);
+}
+
+.titulo-contato p {
+    font-size: 17px;
+}
+
+/* COLUNAS */
+
+.contato-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 35px;
+}
+
+/* INFORMAÇÕES */
+
+.contato-info {
+    background-color: var(--verde);
+    color: var(--creme);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.contato-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contato-info > p {
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+.info-card {
+    background-color: var(--verde-escuro);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    color: #FFB17D;
+    margin-bottom: 8px;
+}
+
+.info-card a {
+    color: var(--creme);
+    text-decoration: none;
+}
+
+.info-card a:hover {
+    text-decoration: underline;
+}
+
+.contato-info .botao {
+    margin-top: 10px;
+}
+
+/* FORMULÁRIO */
+
+.contato-formulario {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #4A302815;
+}
+
+.contato-formulario h2 {
+    color: var(--verde);
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+#formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#formulario-contato label {
+    color: var(--marrom);
+    font-weight: bold;
+}
+
+#formulario-contato input,
+#formulario-contato textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #D5C4B4;
+    border-radius: 10px;
+    background-color: #FFFDF9;
+    color: var(--texto);
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+#formulario-contato input:focus,
+#formulario-contato textarea:focus {
+    border-color: var(--laranja);
+    box-shadow: 0 0 0 3px #D9774225;
+}
+
+#formulario-contato textarea {
+    resize: vertical;
+}
+
+#formulario-contato button {
+    background-color: var(--laranja);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#formulario-contato button:hover {
+    background-color: var(--verde);
+}
+
+#status-formulario {
+    color: var(--verde);
+    font-size: 14px;
+}
+
+/* ===== RODAPÉ ===== */
+
+footer {
+    background-color: var(--marrom);
+    color: var(--creme);
+    padding: 30px 8%;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+@media (max-width: 900px) {
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contato-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .inicio {
+        padding: 60px 6%;
+    }
+
+    .inicio-texto h1 {
+        font-size: 38px;
+    }
+
+    .historia {
+        padding: 60px 8%;
+    }
+
+    .historia h2,
+    .curiosidades h2,
+    .interatividade h2 {
+        font-size: 29px;
+    }
+
+    .titulo-contato h1 {
+        font-size: 34px;
+    }
+
+    .pagina-contato {
+        padding: 50px 6%;
+    }
+
+    .contato-info,
+    .contato-formulario {
+        padding: 25px 20px;
+    }
+
+}
+
